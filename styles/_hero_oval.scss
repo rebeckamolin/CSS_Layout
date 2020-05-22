@@ -1,0 +1,60 @@
+.header.faq::before,
+.header.faq::after,
+.header.home::before,
+.header.home::after {
+  grid-area: 1/1;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  clip-path: ellipse(98% 93% at 50% -18%);
+  background-image: linear-gradient(
+    176deg,
+    rgba(0, 19, 44, 1) 0%,
+    rgba(21, 52, 98, 0.9) 100%
+  );
+
+  @media (min-width: 700px) {
+    clip-path: ellipse(74% 92% at 64% -18%);
+  }
+}
+.header.faq::before,
+.header.home::before {
+  transform: translateY(20px);
+  background-image: linear-gradient(
+    176deg,
+    rgba(94, 152, 226, 1) 0%,
+    rgba(21, 52, 98, 0.9) 100%
+  );
+}
+
+.header.contact::before,
+.header.contact::after {
+  grid-area: 1/1;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  clip-path: ellipse(63% 60% at 49% 90%);
+  background-image: linear-gradient(
+    176deg,
+    rgba(21, 52, 98, 0.9) 0%,
+    rgba(0, 19, 44, 1) 100%
+  );
+
+  @media (min-width: 700px) {
+    clip-path: ellipse(75% 60% at 25% 100%);
+  }
+}
+
+.header.contact::before {
+  transform: translateY(-20px);
+  background-image: linear-gradient(
+    176deg,
+    rgba(94, 152, 226, 1) 0%,
+    rgba(21, 52, 98, 0.9) 100%
+  );
+  @media (min-width: 700px) {
+    clip-path: ellipse(75% 60% at 25% 100%);
+  }
+}

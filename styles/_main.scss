@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: montserrat;
+  background-color: #f1f1f1;
+}
+p {
+  color: #323232;
+  line-height: 26px;
+  letter-spacing: 0, 66px;
+}
+
+.mars {
+  color: #f97c7c;
+}
+
+.dot {
+  color: #e32700;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: 0.89px;
+  color: #e32700;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+button {
+  margin-top: 2em;
+  width: 128px;
+  height: 38px;
+  border-radius: 10px;
+  border: solid 1px #2c4f80;
+  background: none;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2c4f80;
+  letter-spacing: 0.52px;
+}
+
+.active {
+  border-bottom: 3px solid #e32700;
+}

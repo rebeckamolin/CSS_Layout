@@ -1,0 +1,88 @@
+.bigWrapper {
+  display: grid;
+  gap: 2em;
+  background-color: white;
+
+  &.sky {
+    @media (min-width: 1000px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &.planets {
+    @media (min-width: 1000px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+
+.bigBoxPic {
+  height: 100%;
+  width: 100%;
+
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.bigTextBox {
+  display: flex;
+  flex-direction: column;
+  place-self: center;
+  text-align: start;
+  padding: 2em;
+  color: black;
+  h3 {
+    margin-bottom: 1em;
+    color: #e32700;
+    font-size: 36px;
+    font-family: montserrat;
+    letter-spacing: 1.33px;
+    font-weight: 800;
+  }
+
+  @media (min-width: 1000px) {
+    order: 1;
+    padding: 10em;
+  }
+}
+
+.planet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10%;
+  height: 100%;
+  width: 100%;
+  grid-column: span 2;
+  background-image: radial-gradient(circle at 50% 39%, #072142, #00132c 101%);
+
+  @media (min-width: 1000px) {
+    grid-column: span 1;
+  }
+}
+
+.smallPlanet {
+  height: 30px;
+  width: 30px;
+  margin: 10%;
+}
+
+.sun {
+  height: 48px;
+  width: 48px;
+  margin-top: 10%;
+}
+
+.planet__text {
+  color: black;
+  background-color: white;
+  padding: 2em;
+  grid-column: span 2;
+  @media (min-width: 1000px) {
+    padding: 4em;
+  }
+}

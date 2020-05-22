@@ -1,0 +1,82 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5em;
+  padding: 2em;
+  gap: 3em;
+  width: 100%;
+  background: #ffffff;
+  align-items: center;
+  justify-self: center;
+  box-shadow: 0 4px 15px 0 rgba(185, 185, 185, 0.5);
+
+  @media (min-width: 550px) {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr;
+    max-width: 1180px;
+    margin: 5em;
+  }
+  .f-name {
+    grid-area: "msg";
+  }
+}
+input {
+  width: 90%;
+}
+
+.msg {
+  grid-column: span 3;
+}
+
+.input__name {
+  margin: 2em;
+}
+
+.msg__box {
+  width: 100%;
+  height: 39px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: solid 1px #2c4f80;
+
+  &.big {
+    height: 271px;
+  }
+}
+
+.msg__text {
+  color: #2c4f80;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.52px;
+}
+
+.btn {
+  justify-self: center;
+  grid-column: span 3;
+}
+
+.info__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info__header {
+  color: #e32700;
+  margin: 1em;
+}
+
+.info__text {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.89px;
+  color: #2c4f80;
+  max-width: 500px;
+  text-align: center;
+  margin: 1em;
+}
+
+label {
+  width: 100%;
+}

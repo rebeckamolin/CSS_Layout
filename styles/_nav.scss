@@ -1,0 +1,37 @@
+nav {
+  display: flex;
+  flex-direction: column;
+  background-color: $background-color-nav;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $screen-size) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+
+  ul {
+    @extend %link-wrapper;
+
+    @media (min-width: $screen-size) {
+      width: 30vw;
+    }
+
+    li {
+      padding-bottom: 0.5em;
+      a {
+        @extend %link;
+      }
+    }
+  }
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  max-width: 70px;
+  margin: 1em;
+}
